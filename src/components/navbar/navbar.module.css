@@ -1,0 +1,154 @@
+.navbar {
+  width: 100%;
+}
+
+.navContainer {
+  max-width: 1300px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  position: relative;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(12, 12, 12);
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  z-index: 1;
+}
+
+.menuItems.open {
+  transform: translateX(0);
+}
+
+.links {
+  margin-top: -150px;
+}
+
+.navItem {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  transition: all 0.4s;
+}
+
+.specialNavLink {
+  color: white;
+  background-color: #02ca24;
+  border: 2px solid #02ca24;
+  padding: 0.6rem 1.9rem;
+  border-radius: 20px;
+}
+
+.specialNavLink:hover {
+  color: #02ca24;
+  background-color: transparent;
+}
+
+.checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hamburgerLines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburgerLines.open .line1 {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburgerLines.open .line2 {
+  transform: scaleY(0);
+}
+
+.hamburgerLines.open .line3 {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.line1, .line2, .line3 {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #02ca24;
+  transition: transform 0.4s ease-in-out;
+}
+
+.line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.menuItems {
+  padding-top: 120px;
+}
+
+.logo {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  right: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.logo_img {
+   width: 60px;
+   height: auto;
+   margin-top: 4px;
+}
+
+.navContainer input[type="checkbox"]:checked ~ .menuItems {
+  transform: translateX(0);
+}
+
+.navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line1 {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line2 {
+  transform: scaleY(0);
+}
+
+.navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line3 {
+  transform: rotate(-45deg) translate(10px, -5px);
+}

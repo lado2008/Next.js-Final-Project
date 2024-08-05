@@ -11,6 +11,7 @@
   align-items: center;
   height: 62px;
   position: relative;
+  z-index: 20;
 }
 
 .menuItems {

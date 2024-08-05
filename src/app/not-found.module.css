@@ -1,0 +1,14 @@
+.container {
+    padding: 250px;
+    display: flex;
+    justify-content: center;
+}
+.content {
+    color: rgb(255, 0, 0);
+}
+.title {
+    color: var(--btn);
+}
+.button {
+    color: greenyellow;
+}

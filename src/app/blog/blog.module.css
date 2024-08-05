@@ -1,3 +1,24 @@
-.text {
-  color: blue;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
+  padding: 20px; 
+}
+
+.post {
+  width: calc(33.333% - 20px); 
+  box-sizing: border-box; 
+}
+
+@media screen and (max-width: 1280px) {
+  .post {
+    width: calc(45% - 20px); 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post {
+    width: calc(100% - 20px); 
+  }
 }

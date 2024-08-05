@@ -1,13 +1,14 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Blog",
-  description: "Created By Lado Adamia",
+  title: "My App",
+  description: "Created By CodeIT",
 };
 
 export default function RootLayout({ children }) {
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <div className={"container"}>
           <Navbar />
           {children}
+          <Footer />
         </div>
       </body>
     </html>

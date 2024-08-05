@@ -8,6 +8,7 @@
     padding-right: 50px;
     justify-content: space-between;
 }
+
 .button {
     padding: 20px 30px;
     margin-top: 20px;
@@ -19,9 +20,11 @@
     cursor: pointer;
     transition: all .3s;
 }
+
 .button:hover {
     background-color: #397e00;
 }
+
 .texts {
     max-width: 500px;
 }

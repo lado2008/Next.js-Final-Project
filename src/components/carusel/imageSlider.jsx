@@ -87,6 +87,21 @@ const Carousel = ({ slides }) => {
                     font-size: 20px;
                     color: #fff;
                 }
+                @media (max-width: 765px) {
+                    .overlay {
+                        bottom: 250px;
+                        left: 50px;
+                    }
+                   .overlay h2 {
+                        font-size: 25px;
+                    }
+                   .overlay p {
+                        font-size: 15px;
+                    }
+                }
+                @media (max-width: 590px) {
+                    left: 20px;
+                }
             `}</style>
         </div>
     );

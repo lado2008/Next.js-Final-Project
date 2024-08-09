@@ -24,7 +24,7 @@ const Register = () => {
     } else if (userData.lastname.length == 0) {
       return setError("You must enter a lastname");
     } else if (userData.age == 0) {
-      return setError("You must enter an age older than 14+ ");
+      return setError("You must enter an age older than 14");
     } else if (parseInt(userData.age) < 14 || parseInt(userData.age) > 100) {
       return setError("User must be older than 14");
     } else if (!userData.email.includes("@")) {
@@ -119,7 +119,7 @@ const Register = () => {
             }}
           />
           <button onClick={handleRegister}>Register</button>
-          <Link className={styles.LoginLink} href={"/login"}>
+          <Link href={"/login"}>
             Have an account? <b className={styles.Login_link}>Login</b>
           </Link>
         </form>

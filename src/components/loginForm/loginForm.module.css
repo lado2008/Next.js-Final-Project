@@ -3,6 +3,7 @@
   flex-direction: column;
   text-align: center;
   gap: 30px;
+  color: white;
 }
 
 .form input {
